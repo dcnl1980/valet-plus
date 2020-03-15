@@ -1,9 +1,13 @@
 {
-    "name": "weprovide/valet-plus",
+    "name": "dcnl1980/valet-plus",
     "app": "Valet+",
     "description": "Blazing fast macOS PHP development environment",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Christiaan van Steenbergen",
+            "email": "cvsteenbergen@gmail.com"
+        },
         {
             "name": "Taylor Otwell",
             "email": "taylor@laravel.com"
@@ -35,17 +39,17 @@
         "laravel/valet": "*"
     },
     "require": {
-        "php": ">=5.6",
+        "php": ">=7.4",
         "illuminate/container": "~5.1",
-        "mnapoli/silly": "~1.5.0",
-        "symfony/process": "~2.7|~3.0",
+        "mnapoli/silly": "~1.7",
+        "symfony/process": "~5.0",
         "nategood/httpful": "~0.2",
         "tightenco/collect": "~5.4.0",
         "sebastian/version": "^2.0"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.7"
+        "phpunit/phpunit": "~7.4"
     },
     "bin": [
         "valet"
