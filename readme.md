@@ -72,7 +72,7 @@ Here are a few key differences compared to the original Valet:
 
 > :information_source: Valet+ will automatically start its daemon each time your machine boots. There is no need to run `valet start` or `valet install` ever again once the initial Valet+ installation is complete.
 
-> :information_source: To update Valet+ to the latest version use the `composer global require weprovide/valet-plus` command in your terminal. After upgrading, it is good practice to run the `valet install` command so Valet+ can make additional upgrades to your configuration files if necessary.
+> :information_source: To update Valet+ to the latest version use the `composer global require dcnl1980/valet-plus:dev-master` command in your terminal. After upgrading, it is good practice to run the `valet install` command so Valet+ can make additional upgrades to your configuration files if necessary.
 
 ### Serving sites
 
