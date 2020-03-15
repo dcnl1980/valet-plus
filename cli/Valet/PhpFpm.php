@@ -434,6 +434,8 @@ class PhpFpm
         output($this->cli->runAsUser('brew list | grep php71- | xargs brew uninstall'));
         info('Removing all old php72- packages from homebrew/php tap');
         output($this->cli->runAsUser('brew list | grep php72- | xargs brew uninstall'));
+        info('Removing all old php74- packages from homebrew/php tap');
+        output($this->cli->runAsUser('brew list | grep php74- | xargs brew uninstall'));
 
         // Remove deprecated n98-magerun packages.
         info('Removing all old n98-magerun packages from homebrew/php tap');
@@ -444,7 +446,7 @@ class PhpFpm
         output($this->cli->runAsUser('brew list | grep drush | xargs brew uninstall'));
 
         // Disable extensions that are not managed by the PECL manager or within php core.
-        $deprecatedVersions = ['5.6', '7.0', '7.1', '7.2'];
+        $deprecatedVersions = ['5.6', '7.0', '7.1', '7.2', '7.4'];
         $deprecatedExtensions = ['apcu', 'intl', 'mcrypt'];
         foreach ($deprecatedVersions as $phpVersion) {
             info('[php' . $phpVersion . '] Disabling modules: ' . implode(', ', $deprecatedExtensions));
