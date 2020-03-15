@@ -1,9 +1,5 @@
 <p align="center"><img width="200" src="images/logo.png"></p>
 
-## ToDo
-
-Updating valet@php:7.1 -> php:7.4
-
 ## Introduction
 
 Valet+ is a development environment for macOS. No Vagrant, no Docker, no `/etc/hosts` file.
