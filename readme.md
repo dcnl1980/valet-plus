@@ -4,7 +4,9 @@
 
 Valet+ is a development environment for macOS. No Vagrant, no Docker, no `/etc/hosts` file.
 
-### Valet vs. Valet+
+### Valet vs. Valet+ 3.0
+
+This Valet Plus is working with the latest Laravel 6.x|Laravel 7.x installations. 
 
 Valet+ is a third-party fork of [Laravel Valet](https://github.com/laravel/valet). Valet+ adds functionality to Valet with a goal of making things even simpler and faster. We are very grateful to the Laravel team for providing the base that we built Valet+ on. Since this is a fork we'll pull in changes from the original Valet regularly as they are released.
 
@@ -60,9 +62,9 @@ Here are a few key differences compared to the original Valet:
 
 1. Install or update [Homebrew](https://brew.sh/) to the latest version using `brew update`.
 3. Add the Homebrew PHP tap for Valet+ via `brew tap henkrehorst/php`.
-3. Install PHP 7.2 using Homebrew via `brew install valet-php@7.2`.
+3. Install PHP 7.4 using Homebrew via `brew install valet-php@7.4`.
 4. Install Composer using Homebrew via `brew install composer`.
-5. Install Valet+ with Composer via `composer global require weprovide/valet-plus`.
+5. Install Valet+ with Composer via `composer global require dcnl1980/valet-plus:dev-master`.
 6. Add `export PATH="$PATH:$HOME/.composer/vendor/bin"` to `.bash_profile` (for bash) or `.zshrc` (for zsh) depending on your shell (`echo $SHELL`)
 7. Run the `valet fix` command. This will check for common issues preventing Valet+ from installing.
 8. Run the `valet install` command. Optionally add `--with-mariadb` to use MariaDB instead of MySQL This will configure and install Valet+ and DnsMasq, and register Valet's daemon to launch when your system starts.
@@ -107,6 +109,14 @@ valet use 7.1
 
 ```
 valet use 7.2
+```
+
+```
+valet use 7.3
+```
+
+```
+valet use 7.4
 ```
 
 ## Xdebug
